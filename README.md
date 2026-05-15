@@ -1,3 +1,11 @@
+---
+title: AI News Classifier
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+---
+
 # AI News Classification Project
 
 ## 1. Project Description
@@ -69,14 +77,14 @@ python train_model.py
 python app.py
 
 4. Open API locally:
-http://127.0.0.1:5000
+http://127.0.0.1:7860
 
 ---
 
 ## 7. API Testing (Postman)
 
 - Method: POST  
-- URL: http://127.0.0.1:5000/predict  
+- URL: http://127.0.0.1:7860/predict  
 
 ### Body Type:
 raw → JSON (application/json)
