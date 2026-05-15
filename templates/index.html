@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI News Classifier</title>
+</head>
+<body>
+
+    <h1>Fake News Detector</h1>
+
+    <form action="/predict" method="POST">
+
+        <textarea 
+        name="news"
+        rows="6"
+        cols="50"
+        placeholder="Enter news here">
+        </textarea>
+
+        <br><br>
+
+        <button type="submit">
+            Predict
+        </button>
+
+    </form>
+
+    {% if prediction %}
+
+        <h2>Prediction: {{ prediction }}</h2>
+
+    {% endif %}
+
+</body>
+</html>
